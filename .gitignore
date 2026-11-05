@@ -1,0 +1,21 @@
+# Configurações locais e credenciais
+.env
+.env.*
+!.env.example
+config/conexao.php
+
+# Backups do banco de dados
+/database/*backup*.sql
+/database/*dump*.sql
+/database/produtos_backup.sql
+
+# Arquivos temporários
+*.log
+.DS_Store
+Thumbs.db
+
+# Dependências
+/vendor/
+/node_modules/
+
+/produtos_backup.sql
