@@ -22,7 +22,7 @@ if (isset($_SESSION['carrinho'])) {
 
     <title>Skin Care Gallery</title>
 
-    <link rel="stylesheet" href="/skin-care-gallery/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
