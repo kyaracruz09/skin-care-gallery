@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --azul: #dceef5;
+    --azul-escuro: #759caf;
+    --rosa: #f5dce5;
+    --branco: #ffffff;
+    --preto: #252525;
+    --cinza: #777777;
+    --fundo: #fbfaf9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--fundo);
+    color: var(--preto);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, select {
+    font: inherit;
+}
+
+.aviso {
+     background: var(--rosa);
+    color: var(--preto);
+    text-align: center;
+    padding: 11px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.cabecalho {
+    background: white;
+    min-height: 85px;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+}
+
+.logo span {
+    color: var(--azul-escuro);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--azul-escuro);
+}
+
+.banner {
+    margin: 35px auto;
+    width: 88%;
+    min-height: 350px;
+    padding: 55px;
+    background: var(--azul);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.banner h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 4vw, 52px);
+    max-width: 480px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    line-height: 1.8;
+    max-width: 440px;
+    margin-bottom: 25px;
+}
+
+.banner img {
+    width: 40%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+.botao {
+    display: inline-block;
+    padding: 13px 25px;
+    background: var(--preto);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botao:hover {
+    background: var(--azul-escuro);
+}
+
+.secao {
+    width: 88%;
+    margin: 60px auto;
+}
+
+.titulo-secao {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.marcas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.marca-card {
+    background: var(--branco);
+    padding: 30px 15px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    transition: .3s;
+}
+
+.marca-card:hover {
+    background: var(--azul);
+    transform: translateY(-4px);
+}
+
+.marca-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.produto-card {
+    background: white;
+    padding: 12px;
+    border: 1px solid #eeeeee;
+}
+
+.produto-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: #f8f8f8;
+}
+
+.produto-card h3 {
+    font-size: 15px;
+    margin: 13px 0 7px;
+}
+
+.produto-card p {
+    color: var(--cinza);
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.produto-card .preco {
+    color: var(--preto);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.filtros a {
+    padding: 10px 18px;
+    background: white;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+}
+
+.filtros a.ativo,
+.filtros a:hover {
+    background: var(--azul);
+    border-color: var(--azul-escuro);
+}
+
+.busca {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px auto;
+}
+
+.busca input {
+    width: min(450px, 70%);
+    padding: 13px;
+    border: 1px solid #dddddd;
+}
+
+.formulario {
+    max-width: 480px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border: 1px solid #eeeeee;
+}
+
+.formulario h1 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
+}
+
+.formulario label {
+    display: block;
+    margin: 15px 0 7px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd;
+}
+
+.formulario .botao {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.detalhe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.detalhe img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    background: white;
+}
+
+.detalhe h1 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
+}
+
+.detalhe p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.tabela-carrinho th,
+.tabela-carrinho td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.rodape {
+    margin-top: 80px;
+    background: var(--azul);
+    text-align: center;
+    padding: 45px 20px;
+    line-height: 2;
+}
+
+.rodape h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.mensagem {
+    padding: 12px;
+    margin: 15px 0;
+    background: #e8f5eb;
+    color: #245b35;
+}
+
+.erro {
+    padding: 12px;
+    margin: 15px 0;
+    background: #fce8e8;
+    color: #9c2929;
+}
+
+@media (max-width: 900px) {
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .marcas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .banner {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner img {
+        width: 80%;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .produto-card img {
+        height: 160px;
+    }
+
+    .marcas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .detalhe {
+        grid-template-columns: 1fr;
+    }
+
+    .tabela-carrinho {
+        font-size: 12px;
+    }
+}
