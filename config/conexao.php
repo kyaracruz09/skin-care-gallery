@@ -5,8 +5,6 @@ $porta = getenv('DB_PORT');
 $banco = getenv('DB_NAME');
 $usuario = getenv('DB_USER');
 $senha = getenv('DB_PASSWORD');
-error_log("DB_HOST definido: " . (empty($host) ? "NAO" : "SIM"));
-error_log("DB_PORT definido: " . (empty($porta) ? "NAO" : "SIM"));
 
 try {
     $pdo = new PDO(
