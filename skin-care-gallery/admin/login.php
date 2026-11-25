@@ -1,4 +1,3 @@
-
 <?php
 
 // Configurações de segurança da sessão
