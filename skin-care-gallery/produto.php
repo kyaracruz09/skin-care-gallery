@@ -1,4 +1,9 @@
 <?php
+
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 require_once "config/conexao.php";
 
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
