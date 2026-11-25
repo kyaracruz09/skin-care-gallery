@@ -1,5 +1,11 @@
 <?php
 
+if (headers_sent($arquivo, $linha)) {
+    error_log("SAIDA ANTES DO LOGIN: $arquivo na linha $linha");
+} else {
+    error_log("LOGIN INICIADO SEM SAIDA ANTERIOR");
+}
+
 // Configurações de segurança da sessão
 ini_set('session.use_strict_mode', '1');
 ini_set('session.use_only_cookies', '1');
